@@ -1,0 +1,369 @@
+html {
+    font-size: 62.5%; /* Reset para REMS -> 62.5% = 10px de 16px */
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+
+img {
+    max-width: 100%; /** Hace que las imagenes sean responsivas, las adapta al contenedor **/
+}
+.contenedor {
+	max-width: 120rem; /* = 1200px */ /*toma todo el espacio disponible siempre y no se pase de 1200px*/
+	margin: 0 auto; /* para que este centrado el contenido en lo que es de pagina */
+}
+
+/** Sistema de tamaños **/
+/** los <p> tiene un default de font-weight de 400 y los <h1> de 700 **/
+
+h1 {  
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {    
+	font-size: 2.6rem;
+}
+
+/** Utilidades **/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 { /* Para poner la fuente en 300 */
+    font-weight: 300; 
+}
+
+.centrar-texto { /* Para centrar el texto */
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.contenido-centrado {
+	max-width: 800px; /* Para el que el contenido no sea tan acho */
+}
+/** Botones **/
+
+.boton {
+    color:#f9f7f7;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.boton-amarillo {
+    background-color: #E08709;
+}
+
+.boton-verde {
+    background-color: #71B100;
+}
+
+/* Header */
+
+.site-header {
+	background-color: #333333;
+	padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio { /* este solo aplica cuando el contenedor tenga las 2 clases juntas */
+	background-image: url(../img/header2.jpg); /* para agregar la imagen de fondo */
+	background-position: center center; /* Para mostrar la imagen desde el centro */
+	background-size: cover; /* Para que tome el alto y ancho disponible, pero guardando las proporciones*/
+	height: 100vh; /* Para agregar la toda la altura de pantalla */
+	min-height: 5rem; /* Para agregar la altura min */
+}
+
+.inicio {
+	opacity:2.4;
+}
+
+.contenido-header {
+    height: 100%; /* toma toda la altura del header */
+    display: flex; /* habilita las direcciones del elemento */
+    flex-direction: column; /* Como puse aquí la direccion de flex vertical */
+    justify-content: space-between; /* esto lo voy a mover en sentido vertical, align seria para moverlo horizontal */
+}
+
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 2rem; /* Padding es espacio hacia adentro del elemento, marging es espacio con otro elemento */
+    max-width: 35rem; /* Para cortar el texto y que continue en la sig linea */
+    line-height: 1.7; /* interlineado */
+}
+
+.barra {
+	display: flex; /* Para empezar a utilizarlo como flex */
+	justify-content: space-between; /*Para alinearlo el logo y el nav horizontalmente*/
+	padding-top: 3rem; /* Para agregar una separacion y empujar hacia abajo el logo*/
+    align-items: center; /** Para alinear verticalmente los elementos **/
+	position: 0 5px 5px 9px;
+	margin-top: -8rem;
+}
+
+.barra img {
+	height: 30vh;
+}
+
+
+/** Navegacion **/
+
+.navegacion a { /* selecciona a todos los "a" de la clase navegacion */
+	color: white; /* el rgba usa transparencia y el hsla tambien */
+	text-decoration: none; /* le quita la linea abajo al texto */
+	font-size: 2rem;
+	margin-right: 2rem; /* separando cada uno de los elementos */
+}
+
+.navegacion a:hover {
+	color: rgb(0, 204, 255); 
+}
+
+.navegacion a:last-of-type { /*es un peudo selector que le quita el margen al ultimo elemento */ 
+	margin-right: 0;
+}
+
+/** Iconos nosotros */
+
+.encabezado-nosotros {
+    text-align: center;
+    font-weight: 300; /* Para cambiarle la grosor de la letra */
+}
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono {
+    flex-basis: calc(33.3%  - 1rem); /** Para darle tamaño especifico a cada "icono nosotros" y se usa % por el responsive design */
+    text-align: center; /* Para centrar los iconos y texto */
+}
+
+.icono h3 {
+    text-transform: uppercase; /* Para ponerlo en mayusculas, capitalize es para poner cada letra en mayus */
+}
+
+/* Anuncios */
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* posiciona para abajo los otros 3 anuncios (viene en default:no wrap) */
+}
+
+.anuncio { /* este hijo es el que define el tamaño */
+	flex: 0 0 calc(33.3% - 1rem);
+	/*
+	flex-grow: 0; -- esto hace que si hay la posibilidad de agrandar el contenido lo haga
+	flex-shrink: 0; -- esto hace que no se encoja el contenido si es posible y seleccion el de flex-basis (viene en default:1) 
+	flex-basis: calc(33.3% - 1rem) -- esta es tamaño base del contenido;
+	*/
+    border-style: solid;
+    border: 1px solid #b5b5b5; /* primero el tamaño, 2do el tipo, 3ro el color */
+    background-color: #f5f5f5;
+    margin-bottom: 2rem; /* separacion entre la mitad de los anuncios */
+}
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+ 
+.contenido-anuncio h3, .contenido-anuncio p { /*Para quitar el margen por defecto de arriba que tenia el heading y el texto */
+    margin: 0;
+}
+ 
+.precio {
+    color: #5e9a02;
+    font-weight: 700; 
+}
+
+.iconos-caracteristicas {
+	list-style: none;  /* es el estilo de la viñeta de la lista */
+	padding: 0; /* le quita el margen por defecto */
+	display: flex;
+	justify-content: space-evenly;
+	flex: 1; /* Para que agrende los iconos de la pag anuncio pq el contenido se comprime*/
+	max-width: 500px;
+}
+
+.iconos-caracteristicas li {
+	display: flex;
+}
+
+.iconos-caracteristicas li img {
+	margin-right: 2rem;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Anuncios */
+
+.imagen-contacto{
+	background-image: url(../img/encuentra.jpg);
+	background-position: center center; /* centrado  */
+	background-size: cover; /* Para que se vea mejor */
+	height: 40rem;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-contacto {
+	flex: 1; /* divide el espacio disponible del contenedor entre los elementos (1) y le asigna un tamaño*/
+	color: white;
+}
+
+.contenido-contacto p {
+	font-size: 2.5rem;
+}
+
+/* Seccion inferior  */
+
+.seccion-inferior {
+	display: flex;
+	justify-content: space-between;
+}
+
+.seccion-inferior .blog {
+	flex-basis: 60%; /* hara que ocupe el 60% del espacio */
+}
+
+.seccion-inferior .testimoniales {
+	flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog {  /* cada entrada de articulo */
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type {
+	margin-bottom: 0;
+}
+
+.entrada-blog .imagen {
+	flex-basis: 40%
+}
+
+.entrada-blog .texto-entrada {
+	flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada a {
+	color: black;
+	text-decoration: none;
+}
+
+.texto-entrada h4 {
+	margin: 0;
+	line-height: 1.5;
+}
+
+.texto-entrada h4::after {
+	content: ''; /* Creacion de un pseudo-elemento, es aquel q no se puede seleccionar */
+	display: block;
+	width: 15rem;
+	height: .5rem;
+	background-color: #8bc34a;
+	margin-top: .7rem;
+}
+
+.texto-entrada span {
+	color: orange;
+}
+
+.testimonial {
+	background-color: #67bd03;
+	font-size: 2.4rem;
+	padding: 2rem;
+	color: #f7f7f7;
+	border-radius: 2rem;
+}
+
+.testimonial p {
+	text-align: right;
+	font-weight: 700;
+}
+
+.testimonial blockquote:before {  /* Para crear un pseudo elemento antes del testimonial (comillas) */
+	content: ''; 
+	background-image: url(../img/comilla.svg); /* Para crear un pseudo elemento tengo que darle un tamaño) */
+	width: 4rem;  /* Si doy un acho y un largo, necesito darle un display block*/
+	height: 4rem;
+	position: absolute; /* es absolute pq va a permitir poner una posicion especifica */
+	left: -1rem;
+}
+
+.testimonial blockquote {
+	position: relative; /*es relative pq es el padre, la comilla (es un hijo)  se va declara despues de el pero si posiciona antes*/
+	padding-left: 5rem;
+}
+
+/*Footer*/
+
+.site-footer {
+	background-color: #333333;
+	margin: 0;
+}
+
+.contenedor-footer {
+	padding: 3rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.copyright {
+	margin: 0;
+	color: white;
+}
+
+/* Paginas Internas */
+/* Nosotros */
+.contenido-nosotros {
+	display: grid; /* divide el contenido segun cuantos hijos se tengan */
+	grid-template-columns: repeat(2, 1fr); /* divide el contenido (imagen y texto) en 2 columnas 50% para una y 50% para otra */
+	grid-column-gap: 2rem; /* para dar separacion entre columnas */
+}
+
+.texto-nosotros blockquote {
+	font-weight: 900;
+	font-size: 2rem;
+	margin: 0; /* para quitar el margen de la izquierda que trae por defecto */
+	padding: 3rem 0;
+}
+
+.imagen img {
+	border-radius: 1rem;
+}
+
+/* Anuncio */
+.resumen-propiedad {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

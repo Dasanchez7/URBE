@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Paradox Movies</title>
+		<link rel="icon" href="img/house.png">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- siempre mi hoja de estilos va de ultimo-->
+	</head>
+	<body>
+		<script type="text/javascript">alert</script>
+		<header class="site-header inicio"> <!-- se nombra header (logotipo, nombre y navegacion) porque es el contenido superior de la pag--> <!-- se seleccionó 2 clases, id solo se puede seleccionar 1 solo -->
+			<div class="contenedor contenido-header"> <!--se nombra div para agrupar el contenido pero complementa al header--> <!-- flex solo tomara en cuenta al primer nivel de hijos (barra y venta de casas y depar) -->
+				<div class="barra">
+					<a href="index.html">
+						<img src="img/paradox-logo.png" alt="Logotipo de bienes raices">
+					</a>
+					<nav class="navegacion">
+						<a href="anuncios.html">Anuncios</a>
+						<a href="blog.html">Peliculas</a>
+						<a target="_self"href="contacto.html">Contacto</a> <!-- se abre en la misma pestaña -->
+						<a target="_blank" href="nosotros.html">Iniciar Sesión</a> <!-- se abre en una pestaña nueva -->
+					</nav>
+				</div>
+				<h1>Tu cine ideal para tus ratos de entretenimiento</h1>
+			</div> <!-- fin del contenedor -->
+		</header>
+
+		<section class="contenedor seccion"> <!-- se nombra section pq comienza con un heading y se cambia de contenido-->
+			<h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
+			
+			<div class="iconos-nosotros">
+				<div class="icono">
+					<img src="img/icono1.svg" alt="Icono seguridad">
+					<h3>Seguridad</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+
+				<div class="icono">
+					<img src="img/icono2.svg" alt="Icono mejor precio">
+					<h3>El mejor precio</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+
+				<div class="icono">
+					<img src="img/icono3.svg" alt="Icono a tiempo">
+					<h3>A tiempo</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</section>
+
+		<main class="seccion contenedor"> <!--se nombra main pq es el contenido principal de la pag-->
+			<h2 class="fw-300 centrar-texto">Casas y Apartamentos en Venta</h2>
+			
+			<div class="contenedor-anuncios">
+				<div class="anuncio">
+					<img src="img/anuncio1.jpg" alt="Anuncio de casa en el lago">
+					<div class="contenido-anuncio">
+						<h3>Casa de lujo en el Lago</h3>
+						<p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
+						<p class="precio">$3.000.000</p>
+
+						<ul class="iconos-caracteristicas">
+							<li> 
+								<img src="img/icono_wc.svg" alt="icono wc">
+								<p>3</p> 
+							</li>
+							<li>
+								<img src="img/icono_estacionamiento.svg" alt="icono autos">
+								<p>3</p>
+							</li>
+							<li>
+								<img src="img/icono_dormitorio.svg" alt="icono habitaciones">
+								<p>4</p>
+							</li>
+						</ul>
+
+						<a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+					</div>
+				</div>
+
+				<div class="anuncio">
+					<img src="img/anuncio2.jpg" alt="Anuncio de casa de lujo">
+					<div class="contenido-anuncio">
+						<h3>Casa terminados de Lujo </h3>
+						<p>Casa con diseño moderno, asi como tecnologia inteligente y amueblada</p>
+						<p class="precio">$2.000.000</p>
+						<ul class="iconos-caracteristicas">
+
+							<li> 
+								<img src="img/icono_wc.svg" alt="icono wc">
+								<p>3</p> 
+							</li>
+							<li>
+								<img src="img/icono_estacionamiento.svg" alt="icono autos">
+								<p>3</p>
+							</li>
+							<li>
+								<img src="img/icono_dormitorio.svg" alt="icono habitaciones">
+								<p>4</p>
+							</li>
+						</ul>
+
+						<a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+					</div>
+				</div>
+
+				<div class="anuncio">
+					<img src="img/anuncio3.jpg" alt="Anuncio de casa con alberca">
+					<div class="contenido-anuncio">
+						<h3>Casa con Alberca</h3>
+						<p>Casa con alberca y acabados de lujo en la ciudad con excelente oportunidad</p>
+						<p class="precio">$3.000.000</p>
+
+						<ul class="iconos-caracteristicas">
+							<li> 
+								<img src="img/icono_wc.svg" alt="icono wc">
+								<p>3</p> 
+							</li>
+							<li>
+								<img src="img/icono_estacionamiento.svg" alt="icono autos">
+								<p>3</p>
+							</li>
+							<li>
+								<img src="img/icono_dormitorio.svg" alt="icono habitaciones">
+								<p>4</p>
+							</li>
+						</ul>
+
+						<a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+					</div>
+				</div>
+			</div>
+			<div class="ver-todas">
+			<a href="anuncios.html" class="boton boton-verde">Ver Todas</a>
+			</div>
+		</main>
+
+		<section class="imagen-contacto">
+			<div class="contenedor contenido-contacto">
+				<h2>Encuentra la casa de tus sueños</h2>
+				<p>Llena el formulario de contacto y un asesor se pondra en contacto contigo a la brevedad</p>
+
+				<a href="contacto.html" class="boton boton-amarillo">Contactános</a>
+			</div>
+		</section>
+
+
+		<div class="seccion-inferior contenedor seccion">
+			<section class="blog"> 
+				<h3 class="centrar-texto fw-300">Nuestro blog</h3>
+
+				<article class="entrada-blog"> <!--se usa article cuando el elemento habla por si mismo, tiene significado propio (se usa para cada una entrada de blog-->
+
+					<div class="imagen">
+						<img src="img/blog1.jpg" alt="Entrada de blog">
+					</div>
+
+					<div class="texto-entrada">
+						<a href="entrada.html">
+							<h4>Terraza en el techo de tu casa</h4>
+						</a>
+						<p>Escrito el: <span> 20/10/2019</span> por: <span>Admin</span></p>
+						<p>Consejos para construir una terraza el techo de tu casa, con los mejores materiales y ahorrando dinero</p>
+					</div>
+				</article>
+
+				<article class="entrada-blog">
+
+					<div class="imagen">
+						<img src="img/blog2.jpg" alt="Entrada de blog">
+					</div>
+
+					<div class="texto-entrada">
+						<a href="entrada.html">
+							<h4>Guia para la decoracion de tu hogar </h4>
+						</a>
+						<p>Escrito el: <span> 20/10/2019</span> por: <span>Admin</span></p>
+						<p>Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio</p>
+					</div>
+				</article>
+			</section>
+
+			<section class="testimoniales"> 
+				<h3 class="centrar-texto fw-300">Testimoniales</h3>
+				<div class="testimonial">
+					<blockquote>
+					El personal se comporto de una excelente forma, muy buena atencion y la casa que me ofrecieron cumple con todas mis expectativas.
+					</blockquote>
+					<p>- Diego Sánchez</p>
+				</div>
+			</section>
+		</div>
+
+		<footer class="site-footer seccion"> <!-- se nombra footer pq es pie de pag -->
+			<div class="contenedor contenedor-footer">  <!-- se creo para ponerle flexbox a todo -->
+				<nav class="navegacion"> <!-- se nombra asi a la parte de navegacion de la pag -->
+					<a target="_blank" href="nosotros.html">Nosotros</a>
+					<a href="anuncios.html">Anuncios</a>
+					<a href="blog.html">Blog</a>
+					<a target="_self"href="contacto.html">Contacto</a>
+				</nav> 
+				<p class="copyright">|Todos los derechos reservados 2021&copy;| BDD1 Urbe Seccion C1013</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Bienes Raices</title>
+		<link rel="icon" href="img/house.png">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- siempre mi hoja de estilos va de ultimo-->
+	</head>
+	<body>
+		<header class="site-header"> <!-- se nombra header (logotipo, nombre y navegacion) porque es el contenido superior de la pag--> <!-- se seleccionó 2 clases, id solo se puede seleccionar 1 solo -->
+			<div class="contenedor contenido-header"> <!--se nombra div para agrupar el contenido pero complementa al header--> <!-- flex solo tomara en cuenta al primer nivel de hijos (barra y venta de casas y depar) -->
+				<div class="barra">
+					<a href="index.html">
+						<img src="img/logo.svg" alt="Logotipo de bienes raices">
+					</a>
+					<nav class="navegacion">
+						<a target="_blank" href="nosotros.html">Nosotros</a>
+						<a href="anuncios.html">Anuncios</a>
+						<a href="blog.html">Blog</a>
+						<a target="_self"href="contacto.html">Contacto</a>
+					</nav>
+				</div>
+			</div> <!-- fin del contenedor -->
+		</header>
+
+		<h1 class="fw-300 centrar-texto">Consejos para tener una alberca con bajo presupuesto</h1>
+		<img src="img/destacada2.jpg" alt="Imagen Principal">
+
+		<main class="contenedor seccion contenido-centrado texto-entrada">
+			<p>Escrito el: <span> 20/10/2019</span> por: <span>Admin</span></p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</main>
+
+		<footer class="site-footer seccion"> <!-- se nombra footer pq es pie de pag -->
+			<div class="contenedor contenedor-footer">  <!-- se creo para ponerle flexbox a todo -->
+				<nav class="navegacion"> <!-- se nombra asi a la parte de navegacion de la pag -->
+					<a target="_blank" href="nosotros.html">Nosotros</a>
+					<a href="anuncios.html">Anuncios</a>
+					<a href="blog.html">Blog</a>
+					<a target="_self"href="contacto.html">Contacto</a>
+				</nav> 
+				<p class="copyright">|Todos los derechos reservados 2021&copy;| Diego Sánchez&#128128;</p>
+			</div>
+		</footer>
+	</body>
+</html>
