@@ -98,11 +98,11 @@ h4 {
 }
 
 .contenido-header {
-    height: 85%; /* toma toda la altura del header */
+    height: 100%; /* toma toda la altura del header */
     display: flex; /* habilita las direcciones del elemento */
     flex-direction: column; /* Como puse aquí la direccion de flex vertical */
     justify-content: space-between; /* esto lo voy a mover en sentido vertical, align seria para moverlo horizontal */
-	/* padding: 3rem 0; */
+	padding: 3rem 0;
 }
 
 .contenido-header h1 {
