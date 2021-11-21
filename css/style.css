@@ -1,4 +1,4 @@
-html {
+	html {
     font-size: 62.5%; /* Reset para REMS -> 62.5% = 10px de 16px */
 }
 
@@ -16,7 +16,9 @@ img {
 .contenedor {
 	max-width: 120rem; /* = 1200px */ /*toma todo el espacio disponible siempre y no se pase de 1200px*/
 	margin: 0 auto; /* para que este centrado el contenido en lo que es de pagina */
+	padding-bottom:-2rem;
 }
+
 
 /** Sistema de tamaños **/
 /** los <p> tiene un default de font-weight de 400 y los <h1> de 700 **/
@@ -84,7 +86,7 @@ h4 {
 
 .site-header {
 	background-color: #333333;
-	padding: 1rem 0 3rem 0;
+	margin: 0;
 }
 
 .site-header.inicio { /* este solo aplica cuando el contenedor tenga las 2 clases juntas */
@@ -95,15 +97,12 @@ h4 {
 	min-height: 5rem; /* Para agregar la altura min */
 }
 
-.inicio {
-	opacity:2.4;
-}
-
 .contenido-header {
-    height: 100%; /* toma toda la altura del header */
+    height: 85%; /* toma toda la altura del header */
     display: flex; /* habilita las direcciones del elemento */
     flex-direction: column; /* Como puse aquí la direccion de flex vertical */
     justify-content: space-between; /* esto lo voy a mover en sentido vertical, align seria para moverlo horizontal */
+	/* padding: 3rem 0; */
 }
 
 .contenido-header h1 {
@@ -120,10 +119,11 @@ h4 {
     align-items: center; /** Para alinear verticalmente los elementos **/
 	position: 0 5px 5px 9px;
 	margin-top: -8rem;
+	margin-bottom: -5rem;
 }
 
 .barra img {
-	height: 30vh;
+	height: 27vh;
 }
 
 
