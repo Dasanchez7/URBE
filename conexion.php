@@ -1,6 +1,6 @@
 <?php
 // start a conection with the database
-$linl = 'mysql:host=localhost;dbname=paradoxcinema';
+$linl = 'mysql:host=localhost;dbname=mydb';
 $usuario = 'root';
 $contrasena = '';
 
