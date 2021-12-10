@@ -54,6 +54,14 @@ h4 {
 
 }
 
+.toast-body.text-white {
+    font-size: 13px;
+}
+
+.mr-auto.ml-1.text-secondary {
+    font-size: 13px;
+}
+
 .comprarButton {
     font-size: 13px;
 }
