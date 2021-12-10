@@ -37,6 +37,41 @@ h4 {
 	font-size: 2.6rem;
 }
 
+.store {
+    padding-top: 20px;
+}
+
+.item-button.btn.btn-primary.addToCart {
+    padding: 10px;
+}
+
+.addToCart {
+    font-size: 13px;
+}
+
+.btn.btn-success.ml-auto.comprarButton {
+    padding: 10px;
+
+}
+
+.comprarButton {
+    font-size: 13px;
+}
+
+.shoppingCartTotal {
+    font-size: 25px;
+}
+
+.mb-0 {
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+
+
 
 .item {
   border: 2px solid #000;
