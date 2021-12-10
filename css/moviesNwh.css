@@ -2,7 +2,7 @@
  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
  body {
-	 background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95))("https://images.hdqwalls.com/download/spiderman-no-way-home-ju-360x640.jpg");
+	 background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)), url("https://images.hdqwalls.com/download/spiderman-no-way-home-ju-360x640.jpg");
 	 background-position: center;
 	 background-size: cover;
 	 background-repeat: repeat;
