@@ -60,8 +60,8 @@
                 <input type="text" name="cedula" placeholder="Cedula">
                 <input type="text" name="nombre" placeholder="Nombre">
                 <input type="text" name="telef" placeholder="Telefono">
-                <input type="password" name="password" placeholder="Password">
-                <input type="password" name="password2" placeholder="Confirm Password">
+                <input type="password" name="password" placeholder="Contraseña">
+                <input type="password" name="password2" placeholder="Confirmar Contraseña">
                 <button>Regístrarse</button>
             </form>
         </div>
