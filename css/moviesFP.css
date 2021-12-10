@@ -2,7 +2,7 @@
  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
  body {
-	 background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)), url("https://images.wallpapersden.com/image/download/the-forever-purge-movie-2021-poster_bGxuaG2UmZqaraWkpJRoa2Wta2ll.jpg");
+	 background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)), url("https://vader.news/__export/1596492879609/sites/gadgets/img/2020/08/03/the-purge-temporada-2-promo-trama-1563956531.jpg_1937501922.jpg");
 	 background-position: center;
 	 background-size: cover;
 	 background-repeat: repeat;
@@ -121,7 +121,7 @@ header, footer {
  .movie-img {
 	 width: 100%;
 	 height: 380px;
-	 background-image: url(https://images.wallpapersden.com/image/download/the-forever-purge-movie-2021-poster_bGxuaG2UmZqaraWkpJRoa2Wta2ll.jpg);
+	 background-image: url(https://vader.news/__export/1596492879609/sites/gadgets/img/2020/08/03/the-purge-temporada-2-promo-trama-1563956531.jpg_1937501922.jpg);
 	 background-position: center;
 	 background-repeat: no-repeat;
 	 background-size: cover;
@@ -146,7 +146,7 @@ header, footer {
 	 background-size: cover;
 	 z-index: 1 !important;
 	 width: 375px;
-	 height: 670px;
+	 height: 680px;
 	 display: block;
 	 border-radius: 4px;
 }
