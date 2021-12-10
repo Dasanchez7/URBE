@@ -7,12 +7,9 @@
 	<title>Paradox Movies</title>
 	<link rel="icon" href="img/paradox-onlylogo.png">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
-	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- siempre mi hoja de estilos va de ultimo-->
+	<link rel="stylesheet" type="text/css" href="css/moviesCh.css"> <!-- siempre mi hoja de estilos va de ultimo-->
 </head>
 <body>
-
-	<script type="text/javascript">alert</script>
 	<header class="site-header"> <!-- se nombra header (logotipo, nombre y navegacion) porque es el contenido superior de la pag--> <!-- se seleccionó 2 clases, id solo se puede seleccionar 1 solo -->
 		<div class="contenedor contenido-header"> <!--se nombra div para agrupar el contenido pero complementa al header--> <!-- flex solo tomara en cuenta al primer nivel de hijos (barra y venta de casas y depar) -->
 			<div class="barra">
@@ -29,18 +26,57 @@
 		</div> <!-- fin del contenedor -->
 	</header>
 
-    
-
-<footer class="site-footer seccion"> <!-- se nombra footer pq es pie de pag -->
-    <div class="contenedor contenedor-footer">  <!-- se creo para ponerle flexbox a todo -->
-        <nav class="navegacion">
-            <a href="anuncios.html">Anuncios</a>
-            <a href="blog.html">Peliculas</a>
-            <a target="_self"href="contacto.html">Contacto</a> <!-- se abre en la misma pestaña -->
-            <a target="_blank" href="nosotros.html">Iniciar Sesión</a> <!-- se abre en una pestaña nueva -->
-        </nav>
-        <p class="copyright">|Todos los derechos reservados 2021&copy;| BDD1 Urbe Seccion C1013/N613</p>
-    </div>
-</footer>
-</body>
+	<div class="container">
+		<div class="cellphone-container">    
+			<div class="movie">       
+			  <div class="movie-img"></div>
+			  <div class="text-movie-cont">
+				<div class="mr-grid">
+				  <div class="col1">
+					<h1>SPIDER-MAN:NO WAY HOME</h1>
+					<ul class="movie-gen">
+					  <li> B /</li>
+					  <li>2HRS 28MIN /</li>
+					  <li>ACCIÓN/SUPERHÉROES /</li>
+                      <li>9.1</li>
+					</ul>
+				  </div>
+				</div>
+				<div class="mr-grid summary-row">
+				  <div class="col2">
+					<h5>Sinopsis</h5>
+				  </div>
+				  
+				  </div>
+				</div>
+				<div class="mr-grid">
+				  <div class="col1">
+					<p class="movie-description">Después de que la identidad de Peter Parker como Spider-Man es expuesta por Mysterio, la vida y la reputación de Parker son puestas patas arriba. Para arreglar este asunto, Peter decide contactar al Dr. Stephen Strange para que este lo ayude a restaurar su antigua identidad secreta con magia, pero a raíz de esto, algo sale terriblemente mal en el encantamiento y provoca una fractura en el multiverso, causando que cinco supervillanos de otras realidades alternas ingresen a su universo. </p>
+				  </div>
+				</div>
+				<div class="mr-grid actors-row">
+				  <div class="col1">
+					<p class="movie-actors">Tom Holland,Zendaya,Benedict Cumberbatch</p>
+				  </div>
+				</div>
+				<div class="mr-grid action-row">
+				  <div class="col2"><div class="watch-btn"><h3><a class="material-icons" href="https://youtu.be/lyy7y0QOK-0">Visualizar Trailer.&#9654;&#65039;</a></h3>
+				</div>
+			  </div>
+			</div>
+			</div>
+		</div>
+	  </div>
+	<footer class="site-footer seccion"> <!-- se nombra footer pq es pie de pag -->
+		<div class="contenedor contenedor-footer">  <!-- se creo para ponerle flexbox a todo -->
+			<nav class="navegacion">
+				<a href="anuncios.html">Anuncios</a>
+				<a href="blog.html">Peliculas</a>
+				<a target="_self"href="contacto.html">Contacto</a> <!-- se abre en la misma pestaña -->
+				<a target="_blank" href="nosotros.html">Iniciar Sesión</a> <!-- se abre en una pestaña nueva -->
+			</nav>
+			<p class="copyright">|Todos los derechos reservados 2021&copy;| BDD1 Urbe Seccion C1013/N613</p>
+		</div>
+	</footer>
+  </body>
 </html>
