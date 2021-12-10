@@ -1,118 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Paradox Movies</title>
-    <link rel="icon" href="img/paradox-onlylogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
-    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- siempre mi hoja de estilos va de ultimo-->
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tienda</title>
 </head>
+
 <body>
 
-    <script type="text/javascript">alert</script>
-    <header class="site-header"> <!-- se nombra header (logotipo, nombre y navegacion) porque es el contenido superior de la pag--> <!-- se seleccionó 2 clases, id solo se puede seleccionar 1 solo -->
-        <div class="contenedor contenido-header"> <!--se nombra div para agrupar el contenido pero complementa al header--> <!-- flex solo tomara en cuenta al primer nivel de hijos (barra y venta de casas y depar) -->
-            <div class="barra">
-                <a href="index.html">
-                    <img src="img/paradox-logo.png" alt="Logotipo de bienes raices">
-                </a>
-                <nav class="navegacion">
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="peliculas.html">Peliculas</a>
-                    <a target="_self"href="contacto.html">Contacto</a> <!-- se abre en la misma pestaña -->
-                    <a target="_blank" href="login.html">Iniciar Sesión</a> <!-- se abre en una pestaña nueva -->
-                </nav>
+	<header class="site-header"> <!-- se nombra header (logotipo, nombre y navegacion) porque es el contenido superior de la pag--> <!-- se seleccionó 2 clases, id solo se puede seleccionar 1 solo -->
+		<div class="contenedor contenido-header"> <!--se nombra div para agrupar el contenido pero complementa al header--> <!-- flex solo tomara en cuenta al primer nivel de hijos (barra y venta de casas y depar) -->
+			<div class="barra">
+				<a href="index.html">
+					<img src="img/paradox-logo.png" alt="Logotipo de bienes raices">
+				</a>
+				<nav class="navegacion">
+					<a href="anuncios.html">Anuncios</a>
+					<a href="peliculas.html">Peliculas</a>
+					<a target="_self"href="contacto.html">Contacto</a> <!-- se abre en la misma pestaña -->
+					<a target="_blank" href="login.html">Iniciar Sesión</a> <!-- se abre en una pestaña nueva -->
+				</nav>
+			</div>
+		</div> <!-- fin del contenedor -->
+	</header>
+    <!-- START SECTION STORE -->
+    <section class="store">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Chappie</h3>
+                            
+                            <a href="anuncioCh.html"><img class="item-image" src="./img/Chappie.jpg"></a>
+
+                            <div class="item-details">
+                                <h4 class="item-price">20.99Bs</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Spiderman No Way Home</h3>
+
+                            <a href="anuncioNwh.html"><img class="item-image" src="./img/NoWayHome.jpg"></a>
+
+                            <div class="item-details">
+                                <h4 class="item-price">20.99Bs</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Dune</h3>
+
+                            <a href="anuncioD.html"><img class="item-image" src="./img/DUNE.jpeg"></a>
+
+                            <div class="item-details">
+                                <h4 class="item-price">20.99Bs</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">The Forever Purge</h3>
+
+                            <a href="anuncioFP.html"><img class="item-image" src="./img/theforeverpurge.jpg"></a>
+
+                            <div class="item-details">
+                                <h4 class="item-price">19.99Bs</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Sausage Party</h3>
+
+                            <a href="anuncioaSP.html"><img class="item-image" src="./img/SAUSAGE.jpg"></a>
+
+                            <div class="item-details">
+                                <h4 class="item-price">19.99Bs</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Suicide Squad</h3>
+
+                            <a href="anuncioaSS.html"><img class="item-image" src="./img/suicide.jpeg"></a>
+
+                            <div class="item-details">
+                                <h4 class="item-price">6.99Bs</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> <!-- fin del contenedor -->
-    </header>
+        </div>
+    </section>
+    <!-- END SECTION STORE -->
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
 
-    <main class="seccion contenedor"> <!--se nombra main pq es el contenido principal de la pag-->
-        <h2 class="fw-300 centrar-texto">Peliculas en nuestra Cartelera</h2>
-        
-        <div class="contenedor-anuncios">
-            <div class="anuncio">
-                <img src="img/Chappie.jpg" alt="Anuncio de casa en el lago">
-                <div class="contenido-anuncio">
-                    <h3>CHAPPIE</h3>
-                    <p>CIENCIA FICCIÓN</p>
-                    <p>2HRS</p>
-                    <p class="precio">6.9/10</p>
-                
-                    <a href="anuncioCh.html" class="boton boton-amarillo d-block">Ver Sipnosis</a>
-                </div> <!-- contenido anuncios -->
-            </div> <!-- anuncios -->
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0Bs</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
 
-            <div class="anuncio">
-                <img src="img/NoWayHome.jpg" alt="Anuncio de casa de lujo">
-                <div class="contenido-anuncio">
-                    <h3>SPIDER-MAN:NO WAY HOME  </h3>
-                    <p>ACCIÓN/SUPERHÉROES</p>
-                    <p>2HRS 28MIN</p>
-                    <p class="precio">9.1/10</p>
-                    <a href="anuncioNwh.html" class="boton boton-amarillo d-block">Ver Sipnosis</a>
-                </div> <!-- contenido anuncios -->
-            </div> <!-- anuncios -->
+            <!-- END TOTAL -->
 
-            <div class="anuncio">
-                <img src="img/DUNE.jpeg" alt="Anuncio de casa con alberca">
-                <div class="contenido-anuncio">
-                    <h3>DUNE</h3>
-                    <p>CIENCIA FICCIÓN</p>
-                    <p>2HRS 36MIN</p>
-                    <p class="precio">8.2/10</p>
-                    <a href="anuncioD.html" class="boton boton-amarillo d-block">Ver Sipnosis</a>
-                </div> <!-- contenido anuncios -->
-            </div> <!-- anuncios -->
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL COMPRA -->
 
-            <div class="anuncio">
-                <img src="img/theforeverpurge.jpg" alt="Anuncio de casa de lujo">
-                <div class="contenido-anuncio">
-                    <h3>THE FOREVER PURGE</h3>
-                    <p>TERROR/ACCIÓN</p>
-                    <p>1HRS 43MIN</p>
-                    <p class="precio">5.7/10</p>           
-                    <a href="anuncioFP.html" class="boton boton-amarillo d-block">Ver Sipnosis</a>
-                </div> <!-- contenido anuncios -->
-            </div> <!-- anuncios -->
-
-            <div class="anuncio">
-                <img src="img/SAUSAGE.jpg" alt="Anuncio de casa de lujo">
-                <div class="contenido-anuncio">
-                    <h3>SAUSAGE PARTY</h3>
-                    <p>COMEDIA</p>
-                    <p>1HRS 28MIN</p>
-                    <p class="precio">6.1/10</p>
-                    <a href="anuncioaSP.html" class="boton boton-amarillo d-block">Ver Sipnosis</a>
-                </div> <!-- contenido anuncios -->
-            </div> <!-- anuncios -->
-
-            <div class="anuncio">
-                <img src="img/suicide.jpeg" alt="Anuncio de casa de lujo">
-                <div class="contenido-anuncio">
-                    <h3>THE SUICIDE SQUAD</h3>
-                    <p>SUPERHÉROES/ACCIÓN</p>
-                    <p>2HRS 13MIN</p>
-                    <p class="precio">6.7/10</p>
-                    <a href="anuncioaSS.html" class="boton boton-amarillo d-block">Ver Sipnosis</a>
-                </div> <!-- contenido anuncios -->
-            </div> <!-- anuncios -->
 
         </div>
-    </main>
+
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+
 
     <footer class="site-footer seccion"> <!-- se nombra footer pq es pie de pag -->
         <div class="contenedor contenedor-footer">  <!-- se creo para ponerle flexbox a todo -->
             <nav class="navegacion">
                 <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Peliculas</a>
+                <a href="peliculas.html">Peliculas</a>
                 <a target="_self"href="contacto.html">Contacto</a> <!-- se abre en la misma pestaña -->
-                <a target="_blank" href="nosotros.html">Iniciar Sesión</a> <!-- se abre en una pestaña nueva -->
+                <a target="_self" href="signup.php">Iniciar Sesión</a> <!-- se abre en una pestaña nueva -->
             </nav>
             <p class="copyright">|Todos los derechos reservados 2021&copy;| BDD1 Urbe Seccion C1013/N613</p>
         </div>
     </footer>
-  </body>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-20/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="./tienda.js"></script>
+
+</body>
+
 </html>
