@@ -20,7 +20,7 @@ if(!$resultado){
     die();
 }
 
-if (password_verify($user_password, $resultado['Contrasena'])) {
+if (password_verify($user_password, $resultado['CONTRASENA'])) {
 
     $_SESSION['admin'] = $user_login;
     header('Location: restringido.php');
